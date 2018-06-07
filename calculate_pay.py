@@ -6,7 +6,7 @@ def get_perf_pay(readers):
         return 0
     if readers <= 400:
         return readers/4
-    return 100 + (readers - 400) * 0.017
+    return 100 + (readers - 400) * 0.030
 
 
 if __name__ == "__main__":
