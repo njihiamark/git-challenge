@@ -3,15 +3,15 @@ import sys
 
 def get_perf_pay(readers):
     if readers < 200:
-        ret
+        return 0
     if readers <= 400:
-        return read
+        return readers/4
     return 100 + (readers - 400) * 0.017
 
 
 if __name__ == "__main__":
     if (len(sys.argv)) < 2:
-        print('Plea
+        print('Please provide the number of readers...')
     else:
         print('Total pay:')
         print(get_perf_pay(int(sys.argv[1])))
